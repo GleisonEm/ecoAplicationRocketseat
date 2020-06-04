@@ -3,7 +3,7 @@ import knex from 'knex';
 const connection = knex({
     client: 'mysql',
     connection: {
-        host : '192.168.0.105:3306',
+        host : '127.0.0.1',
         user : 'root',
         password : '',
         database : 'node'
