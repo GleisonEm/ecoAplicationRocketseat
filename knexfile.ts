@@ -5,12 +5,16 @@ module.exports = {
   connection: {
       host : '127.0.0.1',
       user : 'root',
-      password : '123456',
+      password : '',
       database : 'node'
   },
   migrations: {
-    directory: path.resolve(__dirname, 'src', 'database', 'migrations')
-  }
+    directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+  },
+  seeds: {
+    directory: path.resolve(__dirname, 'seeds'),
+  },
+  useNullAsDefault: true,
 };
 
  
